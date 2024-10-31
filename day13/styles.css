@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(32, 31, 31);
+    color: white;
+    height: 100vh;
+    padding: 50px 100px;
+}
+
+.container {
+    height: 100vh;   
+    max-width: 1320px;
+    padding: 64px 0;
+    margin: 0 auto;
+    display: grid;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+    gap: 6.4rem;
+}
+
+.grid-two-column {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.hero-content h1 {
+    text-align: left;
+    font-size: 54px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin: 2rem 0 4rem 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-content a{
+    color: black;
+}
+
+.hero-content a:link {
+    background-color: #fff;
+    display: inline-block;
+    padding: 10px 32px;
+    text-transform: capitalize;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.hero-content a:visited {
+    color: orange;
+}
+
+.hero-content a:hover {
+    color: rgb(71, 137, 223);
+}
+
+.hero-content a:active {
+    color: red;
+}
+
+/* ------------------------------- */
+.content-1{
+    width: 100%;
+    background-color:beige;
+    font-size: 30px;
+    text-align: center;
+    color: black;
+}
+
+.content-1 ul p {
+    font-weight: red;
+    color: red;
+}
+
+.content-1 ul li  {
+    color: green;
+}
+
+.content-1 > ul > li {
+    color: blue;
+}
+
+.content-1 ul p + li  {
+    color: orange;
+}

@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: grid;
+    place-items: center;
+}
+
+h1 {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 20px;
+
+}
+
+img {
+    /* box-shadow: 0 0 0 40px white; */
+
+    /* Drop Shadow */
+    filter: drop-shadow(0 0 10px white);
+}

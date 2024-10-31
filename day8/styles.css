@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: white;
+    font-size: 55px;
+    text-align: center;
+    padding-top: 200px;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+
+    /* by default top to bottom */
+    /* background-image: linear-gradient( rgb(230, 121, 170), rgb(31, 157, 199)); */
+
+    /* left to right */
+    /* background-image: linear-gradient( to right, rgb(230, 121, 170), rgb(31, 157, 199)); */
+
+    /* right to left */
+    /* background-image: linear-gradient( to left, rgb(230, 121, 170), rgb(31, 157, 199)); */
+
+    /* bottom to top */
+    /* background-image: linear-gradient( to top, rgb(230, 121, 170), rgb(31, 157, 199)); */
+
+    /* top to bottom */
+    /* background-image: linear-gradient( to bottom, rgb(230, 121, 170), rgb(31, 157, 199)); */
+
+    /* Angles */
+
+    /* left to right */
+    /* background-image: linear-gradient( 90deg, rgb(230, 121, 170), rgb(31, 157, 199)); */
+
+    /* top to bottom */
+    /* background-image: linear-gradient( 180deg, rgb(230, 121, 170), rgb(31, 157, 199)); */
+
+    /* right to left */
+    /* background-image: linear-gradient( 270deg, rgb(230, 121, 170), rgb(31, 157, 199)); */
+
+    /* Diagonal */
+
+    /* bottom to top */
+    /* background-image: linear-gradient( to bottom right, rgb(230, 121, 170), rgb(31, 157, 199)); */
+
+    /* top to bottom */
+    background-image: linear-gradient( to right bottom, rgb(230, 121, 170), rgb(31, 157, 199));
+
+    background-image: linear-gradient( to right top, rgb(230, 121, 170), rgb(31, 157, 199));
+
+    /* Repeating linear gradient*/
+    background-image: Repeating-linear-gradient( 45deg, rgb(230, 121, 170), rgb(31, 157, 199) 45px);
+
+    /* Add cover overlay on image */
+    background-image: linear-gradient(
+        to right top, 
+        rgba(230, 121, 170, 0.7), 
+        rgba(31, 157, 199, 0.7)
+    ), url("wallpaper.jpg");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+
+    /* Radial Gradient */
+    /* by default ellipse shape */
+    background-image: radial-gradient(rgb(230, 121, 170), rgb(31, 157, 199), rgb(12, 110, 12));
+
+    /* Shapes */
+    /* circle */
+    background-image: radial-gradient(circle, rgb(230, 121, 170), rgb(31, 157, 199), rgb(12, 110, 12));
+
+    /* ellipse */
+    background-image: radial-gradient(ellipse, rgb(230, 121, 170), rgb(31, 157, 199), rgb(12, 110, 12));
+
+    /* Differenctly spaced colors stops */
+    background-image: radial-gradient(circle, rgb(230, 121, 170) 20%, rgb(31, 157, 199) 40%, rgb(12, 110, 12) 40%);
+    
+    
+    /* Repeating gradient */
+    background-image: repeating-radial-gradient(circle, rgb(230, 121, 170), rgb(31, 157, 199) 45px);
+
+    background-image: repeating-radial-gradient(circle, rgb(230, 121, 170) 20%, rgb(31, 157, 199) 40%);
+
+    /* Add cover overlay on image */
+    background-image: repeating-radial-gradient(
+        circle, 
+        rgba(230, 121, 170, 0.3), 
+        rgba(31, 157, 199, 0.3),
+        rgba(12, 110, 12, 0.3) 50px
+    ), url("wallpaper.jpg");
+
+    background: radial-gradient(
+        circle at center,
+        #ff5733 0%,
+        #ffc300 20%,
+        #ff5733 40%,
+        #2980b9 60%,
+        #33ff57 80%,
+        #2980b9 100%
+    );
+
+
+}

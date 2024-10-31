@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(217, 255, 205);
+    display: grid;
+    place-items: center;
+}
+
+.hero-section {
+    margin-top: 100px;
+    width: 60%;
+}
+
+h1 {
+    font-family: "Urbanist", sans-serif;
+    font-size: 54px;
+    font-weight: 900;
+    text-align: left;
+    text-decoration-line:underline;
+    text-decoration-style:double ;
+    text-decoration-color:rgb(32, 223, 6) ;
+    text-decoration-thickness: 2px;
+    margin-bottom: 24px;
+}
+
+p {
+    font-family: "urbanist", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    line-height: 1.6;
+
+    /* Column Layout starts from here */
+    column-count: 3;
+    column-rule: 4px solid rgb(115, 185, 9);
+    /* column-rule-color: red ;
+    column-rule-style: dotted ;
+    column-rule-width: 8px; */
+    column-gap: 50px;
+    text-align: justify;
+}
+

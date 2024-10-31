@@ -1,0 +1,76 @@
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(
+        to right top, 
+        rgba(209, 107, 165, 0.7), 
+        rgba(199, 119, 185, 0.7), 
+        rgba(186, 131, 202, 0.7), 
+        rgba(170, 143, 216, 0.7), 
+        rgba(154, 154, 225, 0.7), 
+        rgba(138, 167, 236, 0.7), 
+        rgba(121, 179, 244, 0.7), 
+        rgba(105, 191, 248, 0.7), 
+        rgba(82, 207, 254, 0.7), 
+        rgba(65, 223, 255, 0.7), 
+        rgba(70, 238, 250, 0.7), 
+        rgba(95, 251, 241, 0.7)
+    ), 
+    url('wallpaper.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+}
+
+h1{
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+
+.section-one{
+    width: 1000px;
+    color: black;
+    font-size: 20px;
+    background-color: rgb(102, 251, 164);
+    border: 7px dotted blue;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    padding: 30px;
+    margin-top: 40px;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+
+    /* all (four) sides */
+    /* margin: 100px; */
+    /* margin: 10px 15px 20px 30px */
+
+    /* Top left-right bottom  */
+    /* margin: 40px 100px 200px; */
+
+    /* Top/bottom left/right */
+    /* margin: 50px 100px; */
+}
+
+/* if i did'nt give margin to section-one then these both sections will combine, they are just separated because of margin-bottom */
+
+.section-two{
+    width: 1000px;
+    color: black;
+    font-size: 20px;
+    background-color: rgb(102, 251, 164);
+    border: 7px ridge blue;
+    border-radius: 30px;
+    padding: 20px;
+    /* For center (only horizontally) */
+    margin: auto; 
+    margin-bottom: 30px;
+}
+
+/* Margin in negatiive works */
+/* margin: -100px */
+
+/* Collaspsing Margin */
+/* margin-bottom of uper and margin-top of lower will not add, the highest one will take the place */

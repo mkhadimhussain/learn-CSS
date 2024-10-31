@@ -1,0 +1,32 @@
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(2, 2, 2);
+    display: grid;
+    place-items: center;
+}
+
+h1 {
+    color: white;
+    font-family: 'Urbanist', cursive;
+    font-size: 3em;
+    text-align: center;
+}
+
+.shadow {
+    width: 300px;
+    height: 300px;
+    padding: 40px;
+    background-color: crimson;
+    border-radius: 50px;
+    box-shadow: 0 0 0 60px #ffb000;
+}
+
+/* .shadow {
+    width: 300px;
+    height: 300px;
+    padding: 40px;
+    background-color: crimson;
+    border-radius: 50%;
+    box-shadow: 0 0 60px 60px #ffb000;
+} */

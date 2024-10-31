@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body{
+    background-color:antiquewhite;
+    display: grid;
+    place-items: center;
+}
+
+.hero-section{
+    width: 50%;
+}
+
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Urbanist", system-ui;
+    font-size: 54px;
+    font-weight: 900;
+    font-style: italic;
+}
+
+p{
+    font-family: "Urbanist", system-ui;
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a{
+    font-size: 20px;
+    font-weight: 700;
+    font-style: oblique;
+}
+
+h2{
+    font-family: "Urbanist", system-ui;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+    font-variant: small-caps;
+}

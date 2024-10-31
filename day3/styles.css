@@ -1,0 +1,85 @@
+body{
+    background-color:rgb(207, 236, 149);
+    display: grid;
+    place-items: center;
+    font-family: "urbanist", system-ui;
+}
+
+.hero-section{
+    width: 50%;
+}
+
+h1{
+    font-size: 54px;
+    font-weight: 900;
+    text-align: center;
+    text-decoration-line: underline;
+    text-decoration-color:blue;
+    text-decoration-thickness: 10px;
+    text-decoration-style: double;
+    text-transform: capitalize;
+    text-shadow: 3px 3px 5px aqua;
+}
+
+p, a{
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+    word-spacing: 1px;
+    line-height: 1.56;
+}
+
+p::first-letter{
+    text-transform: uppercase;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+a{
+    text-decoration-line: none;
+    text-transform: uppercase;
+    color:brown;
+    text-shadow: -3px -3px 20px red;
+}
+
+h2{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+    text-decoration-line: underline;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 1.56;
+    text-shadow: -3px -3px 20px magenta;
+}
+
+.h2-1{
+    text-decoration-color:rebeccapurple;
+    text-decoration-thickness: 5px;
+    text-decoration-style: dashed;
+}
+
+.h2-2{
+    text-decoration-color:red;
+    text-decoration-thickness: 3px;
+    text-decoration-style: wavy;
+}
+
+.h2-3{
+    text-decoration-color: green;
+    text-decoration-thickness: 5px;
+    text-decoration-style: dotted;
+}
+
+.h2-4{
+    text-decoration-color: orange;
+    text-decoration-thickness: 5px;
+    text-decoration-style:solid;
+}
+
+.h2-5{
+    text-decoration-color:mediumturquoise;
+    text-decoration-thickness: 3px;
+    text-decoration-style:double;
+}
+

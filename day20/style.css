@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "urbanist", sans-serif;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    background-color:antiquewhite;
+}
+
+#main-heading {
+    font-size: 6.2rem;
+    color: #1e1403;
+    margin: 2rem 0;
+}
+
+.flex-container {
+    width: 60%;
+    height: 500px;
+    /* height: auto;
+    padding: 50px 0; */
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 1px 4px, rgba(51, 51, 51) 0px 0px 0px 3px;
+    background-image: linear-gradient(
+    45deg,
+          hsl(240deg 55% 75%) 0%,
+          hsl(265deg 60% 75%) 8%,
+          hsl(290deg 58% 74%) 17%,
+          hsl(315deg 80% 77%) 25%,
+          hsl(326deg 100% 78%) 33%,
+          hsl(336deg 100% 78%) 42%,
+          hsl(348deg 100% 78%) 50%,
+          hsl(5deg 100% 78%) 58%,
+          hsl(20deg 100% 73%) 67%,
+          hsl(32deg 100% 68%) 75%,
+          hsl(41deg 100% 63%) 83%,
+          hsl(49deg 100% 59%) 92%,
+          hsl(55deg 97% 56%) 100%);
+    color: #fff;
+
+    /* flexnox container properties */
+    display: flex;
+    /* by default raw */
+    flex-direction: row;
+    /* flex-direction: column; */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column-reverse; */
+
+    /* Justify */
+    /* Horizontally in a row */
+    /* Vertically in a Column */
+
+    justify-content: flex-start;
+    /* justify-content: flex-end; */
+    /* justify-content: center; */
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    /* justify-content: space-evenly; */
+
+    /* align-items */
+    /* Vertically in a column */
+    /* Horizontally in a raw */
+
+    align-items: flex-start;
+    /* align-items: flex-end; */
+    /* align-items: stretch; */
+    /* align-items: center; */
+    
+    gap: 20px;
+
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.item {
+    width: 100px;
+    /* min-width: 100px; */
+    height: 100px;
+    /* aspect-ratio: 1; */
+    text-align: center;
+    background-image: linear-gradient(
+    45deg,
+    hsl(122deg 100% 32%) 0%,
+    hsl(140deg 100% 32%) 8%,
+    hsl(153deg 100% 31%) 17%,
+    hsl(165deg 100% 30%) 25%,
+    hsl(177deg 100% 29%) 33%,
+    hsl(189deg 100% 32%) 42%,
+    hsl(196deg 100% 36%) 50%,
+    hsl(202deg 100% 39%) 58%,
+    hsl(206deg 100% 41%) 67%,
+    hsl(209deg 100% 41%) 75%,
+    hsl(212deg 100% 40%) 83%,
+    hsl(215deg 100% 38%) 92%,
+    hsl(232deg 56% 44%) 100%);
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 1px 4px, rgba(51, 51, 51) 0px 0px 0px 3px;
+    font-size: 24px;
+    /* equal space */
+    flex: 1;
+
+}
+
+/* we can make graphs */
+/* .item-2 {
+    height: 400px;
+} */
+
+/* .item-2 { */
+    /* flex-grow: 1; */
+    /* flex-shrink: 5; */
+
+    /* if you want to move item (child) */
+    /* align-self: center; */
+/* } */
+
+/* .item-3 {
+    flex-basis: 200px;
+} */
