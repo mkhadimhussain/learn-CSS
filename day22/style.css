@@ -70,9 +70,6 @@ a {
 
     /* for all the property */
     transition: all 1s linear;
-
-
-
 }
 
 .hero-content a:hover {
@@ -84,4 +81,4 @@ a {
 
 img:hover {
     scale: 1.2;
-}255
+}

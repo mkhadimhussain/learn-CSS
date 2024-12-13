@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Urbanist", sans-serif;
+}
+
+body {
+    background-color: rgb(253, 223, 130);   
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    box-shadow: inset 0 0 0 5px hsl(35, 71%, 53%);
+}
+
+.box {
+    /* width: 250px;
+    height: 100px; */
+    /* below three properties for scale and  transform */
+    width: 250px;
+    height: 250px;
+    background-color: #475eb0;
+    box-shadow: 0 0 0 15px #ddab4d;
+    margin: 20px;
+    color: #fff;
+    font-size: 2rem;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 50%; */
+    transition-property: all;
+}
+
+.container img {
+    width: 100%;
+    width: 30%;
+    height: auto;
+    transition: all 1s linear;
+}
+
+.container img:hover {
+    /* translate */
+
+    /* move to left side */
+    /* transform: translateX(400px); */
+
+    /* move to right side */
+    /* transform: translateX(-400px); */
+
+    /* move to upper side */
+    /* transform: translateY(-100px); */
+
+    /* move to lower side */
+    /* transform: translateY(100px); */
+
+    /* new way in which we should define X Y */
+    /* translate: 400px 0px; */
+
+    /* move to digonal */
+    /* translate: 400px 100px; */
+
+    /* -------------------------------------- */
+
+    /* Scale */
+    /* 2 times large*/
+    /* scale: 2; */
+
+    /* half small */
+    /* scale: 0.5; */
+
+    /* transform: scaleX(2); */
+    /* transform: scaleX(0.5); */
+    /* transform: scaleY(2); */
+
+    /* -------------------------------------- */
+
+    /* rotate */
+    /* clockwise = +value & anticlock = -value */
+
+    /* transform: rotate(90deg); */
+    /* transform: rotate(180deg); */
+    /* transform: rotateX(98deg); */
+
+    /* clockwise */
+    rotate: 20deg;
+
+    /* transform origin (middle point) */
+    /* transform-origin: left; */
+    /* transform-origin: right; */
+    /* for downword right rotate it -20deg */
+
+    /* -------------------------------------- */
+
+    /* skew */
+    /* transform: skew(20deg); */
+    /* transform: skewX(20deg); */
+    /* transform: skewX(-20deg); */
+
+    /* transform: skewY(20deg); */
+
+    /* -------------------------------------- */
+
+    /* old (not better) */
+    /* transform: translateX(100px) scale(.5) rotate(45deg); */
+
+    /* new (better) */
+    translate: 100px;
+    scale: .5;
+    rotate: 45deg;
+
+
+}

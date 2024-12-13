@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #37a785;
+}
+
+h1 {
+    color: white;
+    padding: 50px;
+    font-size: 48px;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.box {
+    width: 80px;
+    height: 80px;
+    background-color: rgb(149, 100, 238);
+    border-radius: 50%;
+    margin: 50px;
+    box-shadow: 0px 0px 0px 10px rgb(70, 17, 161);
+    display: inline-block;
+
+    /* Animation starts from here */
+    animation-name: lefttoright;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    /* animation-delay: 2s; */
+    /* animation-iteration-count: 2; */
+    /* animation-direction: alternate-reverse; */
+
+    /* for alternate */
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+    /* what if direction is not alterative */
+}
+
+/* from and to */
+@keyframes lefttoright {
+    from {
+        translate: 0%;
+    }
+    to {
+        /* translate: 90vw; */
+        translate: calc(90vw - 80px);
+    }
+}
+
+/* 0% and 100% */
+
+/* @keyframes lefttoright {
+    0% {
+        translate: 0%;
+    }
+    50% {
+        translate: 50vw 50vh;
+    }
+    100% {
+        translate: calc(90vw - 80px);
+    }
+} */

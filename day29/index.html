@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="hero-section">
+        <div class="container">
+            <div class="grid grid-two-column">
+                <div class="hero-content">
+                    <h1>CSS Specificity</h1>
+                    <p>
+                        <!-- 2nd highest priority "inline style" -->
+                        <ol class="list-spc" id="list" style="color: #fff;">
+                            <li>Element / pseudo-element: 0, 0, 0, 1</li>
+                            <li>Class or pseudo-class: 0, 0, 1, 0</li>
+                            <li>id: 0, 1, 0, 0</li>
+                            <li>Inline style: 1, 0, 0, 0</li>
+                            <li>!important:  overrides specificity entirely</li>
+                        </ol>
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=MSICFljRcb4&t=32956s">Watch now</a>
+                </div>
+                <div class="hero-image">
+                    <figure><img src="boy1.png" alt="boy1-image"></figure>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

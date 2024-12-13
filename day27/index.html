@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perspective</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(189, 220, 190);
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            box-shadow: 0 0 0 5px #4861ec;
+            /* perspective */
+            perspective: 1000px;
+        }
+
+        .box {
+            height: 400px;
+            background-color: #48dbec;
+            box-shadow: 0 0 0px 15px #353f6d;
+            margin: 20px;
+            color: #fff;
+            font-size: 2rem;
+            text-transform: capitalize;
+            justify-content: center;
+            align-items: center;
+            transition: all 2s linear;
+        }
+
+        .box:hover {
+            transform: translateZ(200px);
+            /* transform: rotateY(60deg); */
+            /* transform: rotateY(-60deg); */
+            /* transform: rotateY(180deg); */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="box" src="image.png" alt="boy">
+    </div>
+</body>
+</html>

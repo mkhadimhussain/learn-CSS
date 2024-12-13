@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float in CSS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            width: 100%;
+            height: 10vh;
+            background-color: #451952;
+            color: #fff;
+
+            & .container {
+                width: 90vw;
+                margin: 0 auto;
+            }
+
+            & a {
+                color: #fff;
+                font-size: 30px;
+                text-decoration: none;
+            }
+
+            & .logo-brand {
+                width: 30%;
+                line-height: 10vh;
+                /* background-color: #ae445a; */
+                float: left;
+                text-align: center;
+            }
+
+            & .navbar-nav {
+                width: 70%;
+                line-height: 10vh;
+                /* background-color: #662549; */
+                float: right;
+                text-align: right;
+            }
+
+            & ul li {
+                list-style: none;
+                display: inline-block;
+                padding: 0 25px;
+                /* border: 5px solid red; */
+            }
+
+            & img {
+                width: 45%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-brand">
+                <a href="#">FLOAT IN CSS</a>
+            </div>
+            <nav class="navbar-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="man.png" alt="man">
+        </div>
+    </header>
+</body>
+</html>

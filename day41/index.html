@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lunar Eclipse</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            /* display: grid;
+            place-items: center; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .universe {
+            width: 100vw;
+            height: 100vh;
+            background-color: #5cdcff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: skycolors 10s ease-in-out infinite;
+        }
+
+        @keyframes skycolors {
+            0% {
+                background: #5cdcff;
+            }
+            25% {
+                background: #2894b3;
+            }
+            50% {
+                background: #000000;
+            }
+            75% {
+                background: #2894b3;
+            }
+            100% {
+                background: #5cdcff;
+            }
+        }
+
+        .sun {
+            width: 18vw;
+            aspect-ratio: 1;
+            background-color: #f5f51b;
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+            box-shadow: rgba(205, 207, 89, 0.5) 0px 48px 100px 2px;
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: inherit;
+                aspect-ratio: 1;
+                border-radius: inherit;
+                background-color: #000;
+                animation: moving 10s ease-in-out infinite;
+            }
+        }
+
+        @keyframes moving {
+            0% {
+                translate: 100%;
+                scale: 1;
+            }
+            50% {
+                translate: 0%;
+                scale: 0.95;
+            }
+            100% {
+                translate: -100%;
+                scale: 0.9;
+            }
+        }
+
+        h1 {
+            position: absolute;
+            top: 15%;
+            font-size: 60px;
+            color: #000;
+            animation: textcolors 10s ease-in-out infinite;
+        }
+
+        @keyframes textcolors {
+            0% {
+                color: #000;
+            }
+            25% {
+                color: gray;
+            }
+            50% {
+                color: #fff;
+            }
+            75% {
+                color: gray;  
+            }
+            100% {
+                color: #000;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="universe">
+        <h1>Lunar Eclipse</h1>
+        <div class="sun"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Center a div inside a div</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            background-color: #b1e8d2;
+
+            /* Parent div */
+
+            /* 1st way (position)*/
+            /* position: relative; */
+
+            /* 2nd way (flexbox) */
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+
+            /* 3rd way (grid) */
+            /* display: grid;
+            place-items: center; */
+
+            /* 4th way (grid) */
+            /* display: grid;
+            justify-content: center;
+            align-items: center; */
+
+            /* 5th way (flex and margin) */
+            display: flex;
+        }
+
+        .child {
+            width: 400px;
+            height: 400px;
+            background-color: #5eaf60;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 25px;
+
+            /* 1st way */
+            /* position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); */
+
+            /* 5th way */
+            margin: auto;
+
+            /* Text Center */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="child">
+        Center a div inside a div
+    </div>
+</body>
+</html>

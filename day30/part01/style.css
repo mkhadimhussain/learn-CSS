@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #4c4d4d;
+    color: azure;
+    height: 100vh;
+    padding: 50px 100px;
+}
+
+.container {
+    height: 80vh;
+    max-width: 1320px;
+    padding: 64px 0;
+    margin: 0 auto;
+    display: grid;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+    gap: 6.4rem;
+}
+
+.grid-two-column {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* .hero-content h1 {
+    text-align: left;
+    font-size: 54px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin: 2rem 0 4rem 0;
+    color: #fff;
+} */
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-content a {
+    background-color: #fff;
+    border: 5px solid #fff;
+    display: inline-block;
+    padding: 10px 32px;
+    text-transform: capitalize;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+
+/* border inline and block */
+h1 {
+    /* border: 5px solid red; */
+
+    /* border-top: 5px solid red;
+    border-bottom: 5px solid red;
+    border-left: 5px solid yellow;
+    border-right: 5px solid yellow; */
+
+    /* for horizontaly */
+    border-inline: 5px solid yellow;
+    /* for vertical */
+    border-block: 5px solid red;
+}
+
+/* CSS Nesting */
+.hero-content {
+    h1 {
+        text-align: left;
+        font-size: 54px;
+
+        /* Writing mode */
+        /* writing-mode: vertical-rl;
+        position: absolute;
+        top: 10%;
+        left: 0%; */
+
+        /* we can use pseudo element also in CSS Nesting*/
+        &::before {
+            content: "</>";
+        }
+    }
+    p {
+        font-size: 18px;
+        letter-spacing: 1px;
+        margin: 2rem 0 4rem 0;
+        color: #fff;
+    }
+}
